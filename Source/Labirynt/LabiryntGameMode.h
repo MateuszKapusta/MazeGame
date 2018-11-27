@@ -23,7 +23,7 @@ protected:
 	virtual AActor* ChoosePlayerStart_Implementation(AController* Player) override;
 
 	UFUNCTION(BlueprintCallable, Category = "Pickups")
-		void ZbierajAktorow();
+		void SprawdzPodloge();
 
 
 

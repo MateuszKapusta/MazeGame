@@ -33,7 +33,7 @@ void ALabiryntGameMode::BeginPlay()
 void  ALabiryntGameMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	ZbierajAktorow();	
+	SprawdzPodloge();	
 }
 
 
@@ -80,7 +80,7 @@ AActor* ALabiryntGameMode::ChoosePlayerStart_Implementation(AController* Player)
 }
 	
 // Reset poziomu oraz zmiana pokoju, dod³ogi po przejœciu
-void ALabiryntGameMode::ZbierajAktorow()
+void ALabiryntGameMode::SprawdzPodloge()
 {
 
 	const ALabiryntCharacter* MainChar = Cast<ALabiryntCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
