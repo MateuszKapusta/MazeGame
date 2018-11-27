@@ -90,13 +90,11 @@ void ALabiryntGameMode::SprawdzPodloge()
 
 	for (int32 iCollected = 0; iCollected < CollectedActors.Num(); ++iCollected)
 	{
-
 		ALabiryntMeta* const TestPickup = Cast<ALabiryntMeta>(CollectedActors[iCollected]);
-
-		if (TestPickup)
-		{
-			TestPickup->ZacznijNowyPoziom();
-		}
+		//WYGRANA
+		if (TestPickup)	
+			ZacznijNowyPoziom();
+		
 
 		APodloga* const TestPodloga = Cast<APodloga>(CollectedActors[iCollected]);
 
@@ -109,4 +107,33 @@ void ALabiryntGameMode::SprawdzPodloge()
 			}
 		}
 	}
+}
+
+void ALabiryntGameMode::ZacznijNowyPoziom() {
+
+	// Zwieksza wartosc pod koniec rozgrywki przed wczytaniem sie naspepnego poziomu
+	ULabiryntGameInstance* wskaznikGI = Cast<ULabiryntGameInstance>(GetGameInstance());
+
+	int32 licznikPoziom = wskaznikGI->GetLicznikPoziom();
+	int32 iloscX = wskaznikGI->GetIloscX();
+	int32 iloscY = wskaznikGI->GetIloscY();
+	int32 licznikRund = wskaznikGI->GetLicznikDodRund();
+
+	//zalezne od licznik poziom ustawic przed poziomem
+	if (licznikPoziom % 3 == 0) wskaznikGI->SetLicznikDodRund(licznikRund + 1);
+
+	iloscX = iloscX + 2;
+	iloscY = iloscY + 2;
+
+	wskaznikGI->SetIloscX(iloscX);
+	wskaznikGI->SetIloscY(iloscY);
+
+	licznikPoziom = licznikPoziom + 1;
+	wskaznikGI->SetLicznikPoziom(licznikPoziom);
+
+	UWorld* const World = GetWorld();
+	ALabiryntGameMode* wskaznikGM = (ALabiryntGameMode*)World->GetAuthGameMode();
+
+	//Zrestartowanie gry
+	wskaznikGM->RestartGame();
 }

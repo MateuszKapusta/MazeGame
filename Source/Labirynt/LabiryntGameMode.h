@@ -25,7 +25,7 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Pickups")
 		void SprawdzPodloge();
 
-
+	void ZacznijNowyPoziom();
 
 };
 

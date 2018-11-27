@@ -22,7 +22,7 @@ public:
 
 	FORCEINLINE class UStaticMeshComponent* GetMetaMesh() const { return MetaMesh; }
 
-	void ZacznijNowyPoziom();
+
 
 
 private:

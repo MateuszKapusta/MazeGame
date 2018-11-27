@@ -96,7 +96,7 @@ float  ALabiryntLiniaCzasuGry::GetCzasGry(){
 
 void  ALabiryntLiniaCzasuGry::PodczasGry(float Value){
 
-		//zerowanie wartosci odpowiedzialnych za nie wlaczanie w tej samej rundzie 2 razy z zedu metody na poczatku rundy 
+		//zerowanie wartosci odpowiedzialnych za nie wlaczanie w tej samej rundzie 2 razy z rzedu metody na poczatku rundy 
 	if ((int32)Value == 0 ){
 
 		sprawdzLabirynt = 0;
