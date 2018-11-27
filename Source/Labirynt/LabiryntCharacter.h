@@ -78,21 +78,13 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category = "Efekt")
 		void WylSwiatloKolor();
 
-
-protected:
-
-	/** Collection sphere */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	class UBoxComponent* ObszarZbierajacy;
-
-	UFUNCTION(BlueprintCallable, Category = "Pickups")
-		void ZbierajAktorow();
-
-
-private:
-
 	/** Returns CollectionSphere subobject **/
 	FORCEINLINE class UBoxComponent* GetObszarZbierajacy() const { return ObszarZbierajacy; }
+
+protected:
+	/** Collection sphere */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+		class UBoxComponent* ObszarZbierajacy;
 
 };
 

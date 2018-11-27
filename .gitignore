@@ -1,13 +1,14 @@
 *.sdf
 *.db
 *.log
-*\Logs
 *.user
+*Logs
 
 Binaries
 obj
 .vs
 Build
+Backup 
 
 WindowsNoEditor
 StarterContent

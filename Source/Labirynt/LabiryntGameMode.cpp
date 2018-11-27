@@ -5,7 +5,8 @@
 #include "LabiryntCharacter.h"
 #include "LabiryntGameInstance.h"
 
-
+#include "LabiryntMeta.h"
+#include "Podloga.h"
 
 ALabiryntGameMode::ALabiryntGameMode()
 {
@@ -16,7 +17,7 @@ ALabiryntGameMode::ALabiryntGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 
-	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bCanEverTick = true;
 }
 
 
@@ -32,7 +33,7 @@ void ALabiryntGameMode::BeginPlay()
 void  ALabiryntGameMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
+	ZbierajAktorow();	
 }
 
 
@@ -78,3 +79,34 @@ AActor* ALabiryntGameMode::ChoosePlayerStart_Implementation(AController* Player)
 	return LabiryntPlayerStart;
 }
 	
+// Reset poziomu oraz zmiana pokoju, dod³ogi po przejœciu
+void ALabiryntGameMode::ZbierajAktorow()
+{
+
+	const ALabiryntCharacter* MainChar = Cast<ALabiryntCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+
+	TArray<AActor*> CollectedActors;
+	MainChar->GetObszarZbierajacy()->GetOverlappingActors(CollectedActors);
+
+	for (int32 iCollected = 0; iCollected < CollectedActors.Num(); ++iCollected)
+	{
+
+		ALabiryntMeta* const TestPickup = Cast<ALabiryntMeta>(CollectedActors[iCollected]);
+
+		if (TestPickup)
+		{
+			TestPickup->ZacznijNowyPoziom();
+		}
+
+		APodloga* const TestPodloga = Cast<APodloga>(CollectedActors[iCollected]);
+
+		if (TestPodloga)
+		{
+			if (TestPodloga->GetOdwiedzony() == false) {
+
+				TestPodloga->SetOdwiedzony(true);
+				TestPodloga->ZmienKolor();
+			}
+		}
+	}
+}

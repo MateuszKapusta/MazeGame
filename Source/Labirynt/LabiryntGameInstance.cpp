@@ -7,15 +7,19 @@
 ULabiryntGameInstance::ULabiryntGameInstance(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer)
 {
 	
+	SetDefault();
+}
+
+void ULabiryntGameInstance::SetDefault() {
+
 	iloscX = 5;
 	iloscY = 5;
 	wielkosc = 400;
-	licznikPoziom = 1;	
+	licznikPoziom = 1;
 	licznikDodRund = 0;
 	czasZegaraRundy = 46;
+	iloscZyc = 3;
 }
-
-
 
 
 int32  ULabiryntGameInstance::GetIloscX(){
@@ -80,4 +84,14 @@ void ULabiryntGameInstance::SetCzasZegaraRundy(int32 wartosc){
 int32 ULabiryntGameInstance::GetCzasZegaraRundy(){
 
 	return czasZegaraRundy;
+}
+
+int32 ULabiryntGameInstance::GetIloscZyc()
+{
+	return iloscZyc;
+}
+
+void ULabiryntGameInstance::SetIloscZyc(int32 wartosc)
+{
+	iloscZyc = wartosc;
 }

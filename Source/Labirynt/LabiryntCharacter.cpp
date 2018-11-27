@@ -59,7 +59,7 @@ ALabiryntCharacter::ALabiryntCharacter()
 void ALabiryntCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	ZbierajAktorow();
+
 }
 
 
@@ -151,34 +151,3 @@ void ALabiryntCharacter::MoveRight(float Value)
 }
 
 
-// Reset poziomu oraz zmiana pokoru dod³ogi po przejœciu
-void ALabiryntCharacter::ZbierajAktorow()
-{
-	TArray<AActor*> CollectedActors;
-	ObszarZbierajacy->GetOverlappingActors(CollectedActors);
-	
-
-	for (int32 iCollected = 0; iCollected < CollectedActors.Num(); ++iCollected)
-	{
-
-		ALabiryntMeta* const TestPickup = Cast<ALabiryntMeta>(CollectedActors[iCollected]);	
-		
-		if (TestPickup )
-		{
-			TestPickup->ZacznijNowyPoziom();
-
-		}
-
-		APodloga* const TestPodloga = Cast<APodloga>(CollectedActors[iCollected]);
-
-		if (TestPodloga)
-		{
-
-			if (TestPodloga->GetOdwiedzony() == false){
-			
-				TestPodloga->SetOdwiedzony(true);
-				TestPodloga->ZmienKolor();			
-			}		
-		}
-	}	
-}
