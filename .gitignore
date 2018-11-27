@@ -1,12 +1,15 @@
 *.opensdf
 *.log
 *.sdf
+*.db
 *.sln
 *.suo
 *\Logs
 *.user
-.vs
+
+WindowsNoEditor
+StarterContent
 Binaries
 obj
-DerivedDataCache
+.vs
 Intermediate
