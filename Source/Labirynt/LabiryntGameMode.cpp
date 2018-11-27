@@ -4,7 +4,6 @@
 #include "LabiryntGameMode.h"
 #include "LabiryntCharacter.h"
 #include "LabiryntGameInstance.h"
-
 #include "LabiryntMeta.h"
 #include "Podloga.h"
 
@@ -17,7 +16,7 @@ ALabiryntGameMode::ALabiryntGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 }
 
 
@@ -33,7 +32,6 @@ void ALabiryntGameMode::BeginPlay()
 void  ALabiryntGameMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	SprawdzPodloge();	
 }
 
 
@@ -79,37 +77,9 @@ AActor* ALabiryntGameMode::ChoosePlayerStart_Implementation(AController* Player)
 	return LabiryntPlayerStart;
 }
 	
-// Reset poziomu oraz zmiana pokoju, dod³ogi po przejœciu
-void ALabiryntGameMode::SprawdzPodloge()
-{
 
-	const ALabiryntCharacter* MainChar = Cast<ALabiryntCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 
-	TArray<AActor*> CollectedActors;
-	MainChar->GetObszarZbierajacy()->GetOverlappingActors(CollectedActors);
-
-	for (int32 iCollected = 0; iCollected < CollectedActors.Num(); ++iCollected)
-	{
-		ALabiryntMeta* const TestPickup = Cast<ALabiryntMeta>(CollectedActors[iCollected]);
-		//WYGRANA
-		if (TestPickup)	
-			ZacznijNowyPoziom();
-		
-
-		APodloga* const TestPodloga = Cast<APodloga>(CollectedActors[iCollected]);
-
-		if (TestPodloga)
-		{
-			if (TestPodloga->GetOdwiedzony() == false) {
-
-				TestPodloga->SetOdwiedzony(true);
-				TestPodloga->ZmienKolor();
-			}
-		}
-	}
-}
-
-void ALabiryntGameMode::ZacznijNowyPoziom() {
+void ALabiryntGameMode::WygranaNowyPoziom() {
 
 	// Zwieksza wartosc pod koniec rozgrywki przed wczytaniem sie naspepnego poziomu
 	ULabiryntGameInstance* wskaznikGI = Cast<ULabiryntGameInstance>(GetGameInstance());
@@ -136,4 +106,22 @@ void ALabiryntGameMode::ZacznijNowyPoziom() {
 
 	//Zrestartowanie gry
 	wskaznikGM->RestartGame();
+}
+
+void ALabiryntGameMode::PrzegranaStaryPoziom() {
+
+	ULabiryntGameInstance* wskaznikGI = Cast<ULabiryntGameInstance>(GetGameInstance());
+	wskaznikGI->SetIloscZyc(wskaznikGI->GetIloscZyc() - 1);
+
+	if (wskaznikGI->GetIloscZyc()<=0) {
+
+		ULabiryntGameInstance* wskaznikGI = Cast<ULabiryntGameInstance>(GetGameInstance());
+		wskaznikGI->SetDefault();
+
+		UWorld* const World = GetWorld();
+		ALabiryntGameMode* wskaznikGM = (ALabiryntGameMode*)World->GetAuthGameMode();
+
+		//Zrestartowanie gry
+		wskaznikGM->RestartGame();
+	}
 }

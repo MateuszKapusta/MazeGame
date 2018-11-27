@@ -15,17 +15,14 @@ public:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaSeconds) override;
-
-
 	APlayerStart* LabiryntPlayerStart;
+
+	void PrzegranaStaryPoziom();
+	void WygranaNowyPoziom();
 
 protected:
 	virtual AActor* ChoosePlayerStart_Implementation(AController* Player) override;
 
-	UFUNCTION(BlueprintCallable, Category = "Pickups")
-		void SprawdzPodloge();
-
-	void ZacznijNowyPoziom();
 
 };
 

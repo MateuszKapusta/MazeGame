@@ -86,5 +86,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class UBoxComponent* ObszarZbierajacy;
 
+	UFUNCTION(BlueprintCallable, Category = "Pickups")
+		void SprawdzPodloge();
 };
 

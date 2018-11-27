@@ -54,16 +54,12 @@ ALabiryntCharacter::ALabiryntCharacter()
 
 
 
-
 // Wywo³ana przy ka¿dej ramce
 void ALabiryntCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	SprawdzPodloge();
 }
-
-
-
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -151,3 +147,31 @@ void ALabiryntCharacter::MoveRight(float Value)
 }
 
 
+// Reset poziomu oraz zmiana pokoju, dod³ogi po przejœciu
+void ALabiryntCharacter::SprawdzPodloge()
+{
+	TArray<AActor*> CollectedActors;
+	GetObszarZbierajacy()->GetOverlappingActors(CollectedActors);
+
+	for (int32 iCollected = 0; iCollected < CollectedActors.Num(); ++iCollected)
+	{
+		ALabiryntMeta* const TestPickup = Cast<ALabiryntMeta>(CollectedActors[iCollected]);
+
+		//WYGRANA
+		if (TestPickup) {
+		
+			ALabiryntGameMode* gmPointer = (ALabiryntGameMode*)GetWorld()->GetAuthGameMode();
+			gmPointer->WygranaNowyPoziom();		
+		}
+
+		APodloga* const TestPodloga = Cast<APodloga>(CollectedActors[iCollected]);
+		if (TestPodloga)
+		{
+			if (TestPodloga->GetOdwiedzony() == false) {
+
+				TestPodloga->SetOdwiedzony(true);
+				TestPodloga->ZmienKolor();
+			}
+		}
+	}
+}

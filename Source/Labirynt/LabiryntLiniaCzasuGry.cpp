@@ -3,6 +3,7 @@
 #include "Labirynt.h"
 #include "LabiryntLiniaCzasuGry.h"
 #include "LabiryntGameInstance.h"
+#include "LabiryntGameMode.h"
 #include "LabiryntTworz.h"
 #include "KameraGorna.h"
 
@@ -44,7 +45,6 @@ void ALabiryntLiniaCzasuGry::BeginPlay()
 
 	ULabiryntGameInstance* wskaznikGI = Cast<ULabiryntGameInstance>(GetGameInstance());
 	liczbaRundLCG = wskaznikGI->GetLicznikDodRund();
-
 
 	czasZegaraRundyLCG = wskaznikGI->GetCzasZegaraRundy();
 
@@ -111,12 +111,13 @@ void  ALabiryntLiniaCzasuGry::UstawLabirynt(float Value)
 {
 	if ((int32)Value == 1 && sprawdzLabirynt != (int32)Value&&liczbaRundLCG== 0){
 		for (TObjectIterator<ALabiryntTworz> ZnajdzLabiryntTworz; ZnajdzLabiryntTworz; ++ZnajdzLabiryntTworz)
-		{
-			sprawdzLabirynt = Value;
-			
+		{	//PRZEGRALES
+			sprawdzLabirynt = Value;		
 			ZnajdzLabiryntTworz->UkryjLabirynt();
-
 			GetWorldTimerManager().SetTimer(LicznikLabiryntTworz, *ZnajdzLabiryntTworz, &ALabiryntTworz::ScianyKolejnaRunda, 2, false);
+
+			ALabiryntGameMode* gmPointer = (ALabiryntGameMode*)GetWorld()->GetAuthGameMode();
+			gmPointer->PrzegranaStaryPoziom();
 		}
 	}
 
