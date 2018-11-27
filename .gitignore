@@ -1,15 +1,16 @@
-*.opensdf
-*.log
 *.sdf
 *.db
-*.sln
-*.suo
+*.log
 *\Logs
 *.user
 
-WindowsNoEditor
-StarterContent
 Binaries
 obj
 .vs
 Intermediate
+
+WindowsNoEditor
+StarterContent
+
+
+
