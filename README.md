@@ -1,5 +1,5 @@
 # MazeGame
-Maze game created using Unreal Engine 4.15.3. You must add StarterContent to folder MazeGame-master\MazeGame_Project\Content or extract it from MazeGame-master\MazeGame_Project\StarterContent.rar.<br />
+Maze game created using Unreal Engine 4.15.3. You must add StarterContent to folder MazeGame-master\MazeGame_Project\Content or extract it from MazeGame-master\MazeGame_Project\Content\StarterContent.rar.<br />
 
 Rules:<br />
 1.You must find water <br />
