@@ -9,7 +9,7 @@ If you fail maze will change its structure <br />
 You have three lives <br />
 
 <br />
-Game Link: https://drive.google.com/drive/folders/10VIQn1OtcIjam4sBjkFA32_c8vqF9Y_m?usp=sharing<br />
+Game Link: https://drive.google.com/file/d/1O_hQhiye6PnTj3B5CHVT71GgrPUKMESO/view?usp=sharing   <br />
 
 <br />
 
