@@ -7,7 +7,7 @@ Rules:<br />
 3.You have three lives <br />
 
 Controls:<br />
-Move: WASD and Mouse. Jump: Space. Pause: ESC and Z.
+Move: WASD and Mouse. Jump: Space. Pause: ESC or Z.
 
 <br />
 Game Link: https://drive.google.com/file/d/1O_hQhiye6PnTj3B5CHVT71GgrPUKMESO/view?usp=sharing   <br />
