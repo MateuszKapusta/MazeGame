@@ -1,8 +1,7 @@
 # MazeGame
 Maze game created using Unreal Engine 4.15.3 <br/>
 
-You must add StarterContent to folder MazeGame-master\MazeGame_Project\Content <br />
-or extract it from MazeGame-master\MazeGame_Project\StarterContent.rar.<br />
+You must add StarterContent to folder MazeGame-master\MazeGame_Project\Content or extract it from MazeGame-master\MazeGame_Project\StarterContent.rar.<br />
 <br />
 GAME <br />
 Rules:<br />
