@@ -9,6 +9,8 @@ You must find water <br />
 If you fail maze will change its structure <br />
 You have three lives <br />
 
+Move: WASD and Mouse, Jump: Space, Pause: ESC and Z.
+
 <br />
 Game Link: https://drive.google.com/file/d/1O_hQhiye6PnTj3B5CHVT71GgrPUKMESO/view?usp=sharing   <br />
 
