@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\Labirynt.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{44734D78-5E7C-49C0-B429-49D3CD1B6702}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Labirynt.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\LabiryntEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{A129E41B-C1AE-4949-9AEF-BA84B66B2DD9}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\Labirynt">
+			<UniqueIdentifier>{C1BF3B82-685E-400B-B540-548973A81F58}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\Labirynt\KameraGorna.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\KameraGorna.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\KameraMenu.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\KameraMenu.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\Labirynt\Labirynt.Build.cs">
+			<Filter>Source\Labirynt</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\Labirynt\Labirynt.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\Labirynt.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\LabiryntCharacter.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\LabiryntCharacter.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\LabiryntGameInstance.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\LabiryntGameInstance.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\LabiryntGameMode.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\LabiryntGameMode.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\LabiryntLiniaCzasuGry.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\LabiryntLiniaCzasuGry.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\LabiryntMeta.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\LabiryntMeta.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\LabiryntTworz.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\LabiryntTworz.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\Podloga.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\Podloga.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\Sciana.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\Sciana.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\ScianaBoczna.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\ScianaBoczna.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Labirynt\ScianaWewnetrzna.cpp">
+			<Filter>Source\Labirynt</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Labirynt\ScianaWewnetrzna.h">
+			<Filter>Source\Labirynt</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
