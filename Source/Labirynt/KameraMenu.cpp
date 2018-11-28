@@ -26,8 +26,8 @@ void AKameraMenu::BeginPlay()
 		iloscX = wskaznikGI->GetIloscX();
 		iloscY = wskaznikGI->GetIloscY();
 		Wielkosc = wskaznikGI->GetWielkosc();
-		this->SetActorRotation(FRotator(0, 180, 0));
-		this->SetActorLocation(FVector(-iloscX / 2 * Wielkosc + Wielkosc/2, 0, 140));		
+		this->SetActorRotation(FRotator(0, 0, 0));
+		this->SetActorLocation(FVector(-iloscX / 2 * Wielkosc + Wielkosc/2, 0, 20));		
 	}
 
 
