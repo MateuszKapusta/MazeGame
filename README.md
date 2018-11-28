@@ -12,4 +12,8 @@ You have three lives <br />
 <br />
 
 
-![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Maze.png)
+![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Maze.png)
+
+![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Start.jpg)
+
+![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Game.jpg)
