@@ -9,9 +9,9 @@ If you fail maze will change its structure <br />
 You have three lives <br />
 
 <br />
-Game Link: https://drive.google.com/drive/folders/10VIQn1OtcIjam4sBjkFA32_c8vqF9Y_m?usp=sharing
-<br />
+Game Link: https://drive.google.com/drive/folders/10VIQn1OtcIjam4sBjkFA32_c8vqF9Y_m?usp=sharing<br />
 
+<br />
 
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/My_pictures/Maze.png)
 
