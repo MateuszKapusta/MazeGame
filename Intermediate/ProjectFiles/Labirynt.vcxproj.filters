@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Labirynt.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{C6B17254-ED61-49EF-95CD-E0BB8DC37FD7}</UniqueIdentifier>
+			<UniqueIdentifier>{2C616522-5566-4E22-95F3-B16D4800FFAA}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Labirynt.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{94855E25-F534-4D89-97C2-2F9B1BF8C8D9}</UniqueIdentifier>
+			<UniqueIdentifier>{711B48A7-B14A-4B17-807A-16849F110798}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\Labirynt">
-			<UniqueIdentifier>{091D9BB0-140A-4445-947F-7698848699E0}</UniqueIdentifier>
+			<UniqueIdentifier>{D4E44182-D52C-4F00-B97A-D3D4B900F6E8}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\Labirynt\KameraGorna.cpp">
 			<Filter>Source\Labirynt</Filter>
