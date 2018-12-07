@@ -13,7 +13,9 @@ Add StarterContent to folder MazeGame-master\MazeGame_Project\Content or extract
 Compiled game: https://drive.google.com/file/d/1O_hQhiye6PnTj3B5CHVT71GgrPUKMESO/view?usp=sharing   <br />
 
 ### Controls:<br />
-Move: WASD and Mouse. Jump: Space. Pause: ESC or Z.
+Move: WASD and Mouse.<br />
+Jump: Space.<br />
+Pause: ESC or Z.<br />
 
 ### Rules:<br />
 
@@ -23,6 +25,7 @@ Game is consists at two stages:<br />
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Start.jpg)
 
 2.Search through maze and find water <br />
+<br />
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Game.jpg)
 
 If you fail maze will change its structure. You have three lives <br />
