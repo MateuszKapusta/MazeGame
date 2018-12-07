@@ -1,6 +1,7 @@
 # MazeGame
 
-Maze game written in C++ created using Unreal Engine 4.15.3. You must find your way through a number of mazes.
+Maze game written in C++ created using Unreal Engine 4.15.3. You must find your way through a number of mazes.<br/>
+<br/>
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Maze.png)
 
 ## Setup
@@ -11,17 +12,20 @@ Add StarterContent to folder MazeGame-master\MazeGame_Project\Content or extract
 
 Compiled game: https://drive.google.com/file/d/1O_hQhiye6PnTj3B5CHVT71GgrPUKMESO/view?usp=sharing   <br />
 
-### Rules:<br />
-1.You must find water <br />
-2.If you fail maze will change its structure <br />
-3.You have three lives <br />
-
 ### Controls:<br />
 Move: WASD and Mouse. Jump: Space. Pause: ESC or Z.
 
+### Rules:<br />
+
+Game is consists at two stages:<br />
+1.Try to remember maze layout 
 
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Start.jpg)
+
+2.Search through maze and find water <br />
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Game.jpg)
+
+If you fail maze will change its structure. You have three lives <br />
 
 
 ## Licence
