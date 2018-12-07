@@ -28,7 +28,7 @@ Game is consists at two stages:<br />
 <br />
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Game.jpg)
 
-If you fail maze will change its structure. You have three lives <br />
+If you fail maze will change its structure. You have three lives. <br />
 
 
 ## Licence
