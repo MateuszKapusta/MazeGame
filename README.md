@@ -19,7 +19,7 @@ Pause: ESC or Z.<br />
 
 ### Rules:<br />
 
-Game is consists at two stages:<br />
+Game is consists of two stages:<br />
 1.Try to remember maze layout 
 
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Start.jpg)
