@@ -20,7 +20,7 @@ Pause: ESC or Z.<br />
 ### Rules:<br />
 
 Game is consists of two stages:<br />
-1.Try to remember maze layout 
+1.Try to remember maze layout <br />
 2.Search through maze and find water <br />
 <br />
 If you fail maze will change its structure. You have three lives. <br />
@@ -29,6 +29,7 @@ If you fail maze will change its structure. You have three lives. <br />
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Start.jpg)
 
 <br />
+
 #### Stage 2<br />
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Game.jpg)
 
