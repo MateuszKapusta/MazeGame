@@ -21,14 +21,18 @@ Pause: ESC or Z.<br />
 
 Game is consists of two stages:<br />
 1.Try to remember maze layout 
-
-![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Start.jpg)
-
 2.Search through maze and find water <br />
 <br />
+If you fail maze will change its structure. You have three lives. <br />
+
+#### Stage 1<br />
+![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Start.jpg)
+
+<br />
+#### Stage 2<br />
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Game.jpg)
 
-If you fail maze will change its structure. You have three lives. <br />
+
 
 
 ## Licence
