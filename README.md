@@ -28,8 +28,6 @@ If you fail maze will change its structure. You have three lives. <br />
 #### Stage 1<br />
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Start.jpg)
 
-<br />
-
 #### Stage 2<br />
 ![alt text](https://github.com/MateuszKapusta/MazeGame/blob/master/Pictures/Game.jpg)
 
